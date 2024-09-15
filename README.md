@@ -1,25 +1,38 @@
-# E-Commerce Customer Churn Prediction using Machine Learning
+# Customer Churn Prediction System
 
+This repository contains a machine learning pipeline for predicting customer churn using an E-commerce dataset. The project involves data cleaning, exploratory data analysis (EDA), feature engineering, and model building using several classification algorithms.
 
+## Project Overview
 
-### The Problem
+- **Data Preprocessing**: 
+  - Handles missing values, outliers, and encodes categorical variables (label encoding, one-hot encoding).
+  - Standardizes numerical features for improved model performance.
 
-In the domain of e-commerce, acquiring a new customer is generally more expensive than keeping the existing ones. The customers usually leave if they do not get good incentives. Thus, analyzing customer behavior to predict customer churn and the reasons can be a great solution for businesses especially small businesses and startups to monitor customer behavior and offer a suitable incentive that could help in maintaining the customers. In Saudi Arabia, most of the e-commerce platforms don’t offer an analytics tool for the traders to help them analyze the customer behavior which lead them to close their stores at the end. Therefore, offering a tool that can help them to analyze customer behavior will be a great contribution.
+- **Exploratory Data Analysis (EDA)**:
+  - Analyzes numerical and categorical variables, visualizes relationships with the target variable (`Churn`) using count plots, box plots, heatmaps, and correlation matrices.
 
- 
+- **Modeling**:
+  - Implements several machine learning models including:
+    - Logistic Regression
+    - K-Nearest Neighbors (KNN)
+    - Support Vector Classifier (SVC)
+    - Decision Trees
+    - RandomForest
+    - XGBoost, LightGBM, CatBoost
+  - Applies cross-validation to evaluate models using `ROC_AUC`, `Accuracy`, and `F1 Score`.
 
-### The Goals
+- **Hyperparameter Tuning**:
+  - Uses `GridSearchCV` to optimize hyperparameters for key models like RandomForest, XGBoost, and LightGBM.
 
-* Help small businesses in e-commerce.
+- **Ensemble Learning**:
+  - Combines top-performing models (KNN, RandomForest, LightGBM) using a soft **Voting Classifier** for enhanced performance.
 
-* Reduce churn rates.
+- **Feature Importance**:
+  - Visualizes feature importance for the best models to identify key drivers of customer churn.
 
-* Improve the skills of the team by sharing knowledge and overcoming challenges together.
+## Project Structure
 
+- `E Commerce Dataset.xlsx`: Input dataset containing customer data for churn analysis.
+- `main.py`: Main Python script containing data preprocessing, EDA, model building, and evaluation.
+- `README.md`: Project overview and instructions.
 
-
-### Resources
-
-* __Omdena__ Local Chapter Challenge link [here](https://omdena.com/projects/e-commerce-customer-churn-prediction/)
-* __Kaggle__ Dataset link [here](https://www.kaggle.com/datasets/ankitverma2010/ecommerce-customer-churn-analysis-and-prediction)
- 
