@@ -1,4 +1,4 @@
-# Customer Churn Prediction System
+# Customer Churn Analysis and Prediction
 
 This repository contains a machine learning pipeline for predicting customer churn using an E-commerce dataset. The project involves data cleaning, exploratory data analysis (EDA), feature engineering, and model building using several classification algorithms.
 
